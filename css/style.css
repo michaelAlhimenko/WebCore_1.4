@@ -208,7 +208,7 @@ h1::before{
     left:0px;
     transition: 1s;
     z-index: 10;
-    height: 100%;
+    min-height: 100%;
 }
 .menu--active{
     left:0px;
