@@ -73,6 +73,7 @@ body{
     font-family: 'TTLakes';
     margin: 0;
     background-color: #F8F8F8;
+
 }
 ul, li, a, button{
     margin: 0;
@@ -236,14 +237,14 @@ h1::before{
     font-weight: 500;
     margin-bottom: 32px;
 }
-.menu-mobile__list__item{
+.menu-mobile__item{
     margin-bottom: 32px;
     display: block;
 }
-.menu-mobile__list__item {
+.menu-mobile__item {
     height: 25px;
 }
-.menu-mobile__list__item > a::after {
+.menu-mobile__item > a::after {
     display: block;
 	position: relative;
 	left: 0; 
@@ -255,28 +256,28 @@ h1::before{
 	transition: width 0.3s ease-out;
 }
 
-.menu-mobile__list__item > a:hover::after,
-.menu-mobile__list__item > a:focus::after{
+.menu-mobile__item > a:hover::after,
+.menu-mobile__item > a:focus::after{
     width: 80%;
 }
 
-.menu-mobile__list__item > a:last-child{
+.menu-mobile__item > a:last-child{
     margin-bottom: 0;
 }
-.menu-mobile__list__item--active{
+.menu-mobile__item--active{
     height: 25px;
 }
-.menu-mobile__list__item--active > a{
+.menu-mobile__item--active > a{
     color: #7E7E82;
     position: relative;
     left: -3px;
 }
-.menu-mobile__list__item--active > a:hover::after,
-.menu-mobile__list__item--active > a:focus::after{
+.menu-mobile__item--active > a:hover::after,
+.menu-mobile__item--active > a:focus::after{
     width: 0;
 }
 
-.menu-mobile__list__item--active::before{
+.menu-mobile__item--active::before{
     content:url(../icons/highlight-mobile.png);
     vertical-align:middle;
     position: relative;
@@ -295,11 +296,11 @@ h1::before{
     display: flex;
     flex-direction: column;
 }
-.menu-mobile__connections__buttons{
+.menu-mobile__connection > .buttons-connections{
     margin-bottom: 16px;
     display: block;
 }
-.menu-mobile__connections__buttons > button {
+.menu-mobile__connection > .buttons-connections > button {
     margin-right: 16px;
 }
 .menu-mobile__email{
